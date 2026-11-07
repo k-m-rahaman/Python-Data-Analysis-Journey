@@ -1,0 +1,82 @@
+# ==================================
+# Python cache and compiled files
+# ==================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==================================
+# Python virtual environments
+# ==================================
+
+.venv/
+venv/
+env/
+ENV/
+
+# ==================================
+# Credentials and sensitive files
+# ==================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+
+# ==================================
+# Python testing and linting
+# ==================================
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+.coverage
+htmlcov/
+coverage.xml
+
+# ==================================
+# Build and distribution files
+# ==================================
+
+*.egg-info/
+build/
+dist/
+
+# ==================================
+# Development environments
+# ==================================
+
+.vscode/
+.idea/
+
+# ==================================
+# Operating system files
+# ==================================
+
+.DS_Store
+Thumbs.db
+
+# ==================================
+# Database files
+# ==================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================================
+# Generated analytical outputs
+# ==================================
+
+**/outputs/
+**/generated/
+
+# ==================================
+# Jupyter temporary files
+# ==================================
+
+.ipynb_checkpoints/
