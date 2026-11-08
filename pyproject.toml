@@ -1,0 +1,51 @@
+# ===========================================
+# Python Data Analysis Journey
+# Development Tool Configuration
+# ===========================================
+
+# Dependencies are managed in requirements.txt.
+
+[tool.ruff]
+
+# Maximum preferred line length
+line-length = 88
+
+# Target Python version
+target-version = "py311"
+
+# Excluded directories
+extend-exclude = [
+    ".venv",
+    "outputs",
+    "generated"
+]
+
+
+# ===========================================
+# Ruff Linting Rules
+# ===========================================
+
+[tool.ruff.lint]
+
+select = [
+    "E4",  # Import and whitespace errors
+    "E7",  # Statement errors
+    "E9",  # Runtime syntax errors
+    "F",   # Pyflakes
+    "I",   # Import sorting
+    "B",   # Bugbear
+    "UP"   # Python modernization
+]
+
+
+# ===========================================
+# Pytest Configuration
+# ===========================================
+
+[tool.pytest.ini_options]
+
+testpaths = [
+    "tests"
+]
+
+addopts = "-ra"
